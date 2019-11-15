@@ -88,11 +88,91 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Admin\Content\css\bootstrap.css" />
+    <Content Include="Areas\Admin\Content\css\bootstrap.min.css" />
+    <Content Include="Areas\Admin\Content\css\plugins\dataTables\dataTables.bootstrap.css" />
+    <Content Include="Areas\Admin\Content\css\plugins\morris\morris-0.4.3.min.css" />
+    <Content Include="Areas\Admin\Content\css\plugins\social-buttons\social-buttons.css" />
+    <Content Include="Areas\Admin\Content\css\plugins\timeline\timeline.css" />
+    <Content Include="Areas\Admin\Content\css\sb-admin.css" />
+    <Content Include="Areas\Admin\Content\font-awesome\css\font-awesome.css" />
+    <Content Include="Areas\Admin\Content\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Areas\Admin\Content\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Areas\Admin\Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Areas\Admin\Content\js\bootstrap.js" />
+    <Content Include="Areas\Admin\Content\js\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Content\js\demo\dashboard-demo.js" />
+    <Content Include="Areas\Admin\Content\js\demo\flot-demo.js" />
+    <Content Include="Areas\Admin\Content\js\demo\morris-demo.js" />
+    <Content Include="Areas\Admin\Content\js\jquery-1.10.2.js" />
+    <Content Include="Areas\Admin\Content\js\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="Areas\Admin\Content\js\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="Areas\Admin\Content\js\plugins\flot\excanvas.min.js" />
+    <Content Include="Areas\Admin\Content\js\plugins\flot\jquery.flot.js" />
+    <Content Include="Areas\Admin\Content\js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="Areas\Admin\Content\js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="Areas\Admin\Content\js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Areas\Admin\Content\js\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="Areas\Admin\Content\js\plugins\morris\morris.js" />
+    <Content Include="Areas\Admin\Content\js\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="Areas\Admin\Content\js\sb-admin.js" />
+    <Content Include="Content\css\bg.css" />
+    <Content Include="Content\css\clean-blog.css" />
+    <Content Include="Content\css\clean-blog.min.css" />
+    <Content Include="Content\img\about-bg.jpg" />
+    <Content Include="Content\img\bg-logo.png" />
+    <Content Include="Content\img\bglogo.jpeg" />
+    <Content Include="Content\img\contact-bg.jpg" />
+    <Content Include="Content\img\home-bg.jpg" />
+    <Content Include="Content\img\post-bg.jpg" />
+    <Content Include="Content\img\post-sample-image.jpg" />
+    <Content Include="Content\js\clean-blog.js" />
+    <Content Include="Content\js\clean-blog.min.js" />
+    <Content Include="Content\js\contact_me.js" />
+    <Content Include="Content\js\jqBootstrapValidation.js" />
+    <Content Include="Content\mail\contact_me.php" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\vendor\fontawesome-free\css\all.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\all.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\brands.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\brands.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\fontawesome.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\regular.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\regular.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\solid.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\solid.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\v4-shims.css" />
+    <Content Include="Content\vendor\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\vendor\jquery\jquery.js" />
+    <Content Include="Content\vendor\jquery\jquery.min.js" />
+    <Content Include="Content\vendor\jquery\jquery.slim.js" />
+    <Content Include="Content\vendor\jquery\jquery.slim.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -100,7 +180,82 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Content\scss\clean-blog.scss" />
+    <Content Include="Content\scss\_bootstrap-overrides.scss" />
+    <Content Include="Content\scss\_contact.scss" />
+    <Content Include="Content\scss\_footer.scss" />
+    <Content Include="Content\scss\_global.scss" />
+    <Content Include="Content\scss\_masthead.scss" />
+    <Content Include="Content\scss\_mixins.scss" />
+    <Content Include="Content\scss\_navbar.scss" />
+    <Content Include="Content\scss\_post.scss" />
+    <Content Include="Content\scss\_variables.scss" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="Content\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="Content\vendor\jquery\jquery.min.map" />
+    <Content Include="Content\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\AdminSharedLayout.cshtml" />
+    <Content Include="Areas\Admin\Content\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Areas\Admin\Content\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Areas\Admin\Content\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Areas\Admin\Content\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\core.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\fixed-width.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\font-awesome.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\icons.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\larger.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\list.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\mixins.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\path.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\spinning.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\stacked.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\less\variables.less" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_core.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_icons.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_larger.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_list.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_mixins.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_path.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_spinning.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_stacked.scss" />
+    <Content Include="Areas\Admin\Content\font-awesome\scss\_variables.scss" />
+    <Content Include="Areas\Admin\Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Areas\Admin\Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Areas\Admin\Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
     <None Include="packages.config" />
+    <Content Include="Views\SharedFile\SharedLayout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Post\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -110,8 +265,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Models\ORM\" />
+    <Folder Include="Models\VM\" />
+    <Folder Include="Views\Index\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
